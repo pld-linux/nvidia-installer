@@ -7,8 +7,11 @@ Group:		X11
 Source0:	ftp://download.nvidia.com/XFree86/nvidia-settings/%{name}-%{version}.tar.gz
 # Source0-md5:	40822f911597be9477ebc8054116ea1a
 URL:		ftp://download.nvidia.com/XFree86/nvidia-settings/
+Patch0:		%{name}-pcilib.patch
 BuildRequires:	XFree86-devel
 BuildRequires:	ncurses-devel
+BuildRequires:	pciutils-devel
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -17,6 +20,9 @@ systems.
 
 %prep
 %setup -q
+%patch0 -p1
+# x86 static lib
+rm -f libpci.a
 
 %build
 %{__make} \
