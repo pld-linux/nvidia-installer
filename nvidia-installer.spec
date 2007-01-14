@@ -7,8 +7,8 @@ License:	GPL v2
 Group:		X11
 Source0:	ftp://download.nvidia.com/XFree86/nvidia-settings/%{name}-%{version}.tar.gz
 # Source0-md5:	40822f911597be9477ebc8054116ea1a
-URL:		ftp://download.nvidia.com/XFree86/nvidia-settings/
 Patch0:		%{name}-pcilib.patch
+URL:		ftp://download.nvidia.com/XFree86/nvidia-settings/
 BuildRequires:	XFree86-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	pciutils-devel
