@@ -1,7 +1,8 @@
 Summary:	A tool for installing NVIDIA software packages on Unix and Linux systems
+Summary(pl):	Narzêdzie do instalowania oprogramowania NVIDIA na systemach Unix i Linux
 Name:		nvidia-installer
 Version:	1.0.7
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		X11
 Source0:	ftp://download.nvidia.com/XFree86/nvidia-settings/%{name}-%{version}.tar.gz
@@ -17,6 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A tool for installing NVIDIA software packages on Unix and Linux
 systems.
+
+%description -l pl
+Narzêdzie do instalowania oprogramowania NVIDIA na systemach Unix
+i Linux.
 
 %prep
 %setup -q
