@@ -8,7 +8,7 @@ Group:		X11
 Source0:	ftp://download.nvidia.com/XFree86/nvidia-settings/%{name}-%{version}.tar.gz
 # Source0-md5:	40822f911597be9477ebc8054116ea1a
 Patch0:		%{name}-pcilib.patch
-URL:		ftp://download.nvidia.com/XFree86/nvidia-settings/
+URL:		ftp://download.nvidia.com/XFree86/nvidia-installer/
 BuildRequires:	XFree86-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	pciutils-devel
