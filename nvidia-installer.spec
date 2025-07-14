@@ -25,7 +25,7 @@ i Linux.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 # x86 static lib
 rm -f libpci.a
 
